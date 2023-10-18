@@ -16,21 +16,57 @@
     <script src="index.js" defer></script>
   </head>
   <body>
-    <main>
+    <main class="main">
       <section class="img">
         <div class="logo">
-          <img src="" alt="" />
-          <p></p>
+          <img src="design/odin-lined.png" alt="odin-logo" class="logo__img" />
+          <p class="logo__name">odin</p>
         </div>
         <div class="credit">
-          Fotografia Mariusz Slonski at https://unsplash.com/@maledobro
+          Fotografia Mariusz Slonski at
+          <a href="https://unsplash.com/@maledobro">@maledobro</a>
         </div>
       </section>
       <section class="form">
-        <div></div>
-        <form action="post"></form>
-        <button type="submit"></button>
-        <p></p>
+        <div class="form__text">
+          This is not a real online service! This is simple The Odin Project
+          learning... project. I'm making a lot of small aplications, to learn
+          as much I can. In This one, I'm trying form validation.
+        </div>
+        <p class="form__paragraph">Have a nice day!</p>
+        <form action="" method="post" class="form__sign-in">
+          <legend>Let's do this!</legend>
+          <div class="input">
+            <label for="first-name">first name</label>
+            <input type="text" name="first-name" id="first-name" />
+          </div>
+          <div class="input">
+            <label for="last-name">last name</label>
+            <input type="text" name="last-name" id="last-name" />
+          </div>
+          <div class="input">
+            <label for="email">email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="input">
+            <label for="phone-number">phone number</label>
+            <input type="number" name="phone-number" id="phone-number" />
+          </div>
+          <div class="input">
+            <label for="password">password</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div class="input">
+            <label for="confirm-password">First Name</label>
+            <input
+              type="password"
+              name="confirm-password"
+              id="confirm-password"
+            />
+          </div>
+        </form>
+        <button type="submit">Create Account</button>
+        <p>Already have an account? <a href="">Log in</a></p>
       </section>
     </main>
     <div class="attribution">

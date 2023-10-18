@@ -61,6 +61,11 @@ body {
 }
 
 /* || GENERAL STYLES */
+
+@font-face {
+  font-family: norseBold;
+  src: url(/design/Norse-Bold.otf);
+}
 /* || UTILITIES */
 
 .nowrap {
@@ -72,7 +77,77 @@ body {
 }
 
 /* BEM */
+/* MAIN */
+.main {
+  display: flex;
+  height: 100%;
+}
+/* IMG */
+.img {
+  width: 30%;
+  min-width: 580px;
+  background: url(design/mariusz-slonski-LycNz2hKV0Q-unsplash.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+.logo {
+  height: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  background-color: #0f0f0fb2;
+  width: 100%;
+}
+.logo__img {
+  height: 70%;
+}
+.logo__name {
+  font-size: 100px;
+  color: #e3e3e3;
+  text-transform: uppercase;
+  font-family: norseBold;
+  letter-spacing: 10px;
+}
+.credit {
+  margin-top: auto;
+  padding-bottom: 35px;
+  text-align: center;
+  color: #e3e3e3;
+}
+/* FORM */
+.form {
+  width: 70%;
+  min-width: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 75px;
+}
+
+.form__text,
+.form__paragraph {
+  text-align: left;
+  padding-left: 50px;
+  padding-right: 100px;
+}
+
+.form__sign-in {
+  background-color: antiquewhite;
+}
+
+/* ATTRIBUTION */
+.attribution {
+  position: absolute;
+  bottom: 0px;
+  width: 100vw;
+  height: 2em;
+  background-color: #222;
+  text-align: center;
+}
 /* MEDIA */
 /* Small */
 @media (min-width: 576px) {
