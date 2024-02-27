@@ -174,7 +174,12 @@ body {
 }
 
 input:focus {
-  outline: 2px solid blue;
+  box-shadow: 5px 3px 3px rgb(82, 82, 173);
+  border: 2px solid rgb(82, 82, 173);
+}
+
+input:valid {
+  border: 2px solid green;
 }
 
 .error {
@@ -225,7 +230,9 @@ label {
 }
 
 /*TODO:
--Change to percentage
--responsive layout
--form mod
+-valid zamiast border to zielony ptaszek
+-error zamiast ramki to tekst pod okienkiem 
+-
+-form validation js
+-on button form validation
 */
