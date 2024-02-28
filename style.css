@@ -194,8 +194,7 @@ label {
 
 .button {
   width: 200px;
-  margin-left: 50px;
-  margin-top: -50px;
+  margin-top: 10px;
   height: 2rem;
   border-radius: 10px;
   background-color: #005b41;
@@ -228,11 +227,3 @@ label {
 /* X-Large */
 @media (min-width: 1200px) {
 }
-
-/*TODO:
--valid zamiast border to zielony ptaszek
--error zamiast ramki to tekst pod okienkiem 
--
--form validation js
--on button form validation
-*/

@@ -2,10 +2,6 @@ const myForm = document.querySelector(".form__sign-in");
 const password = document.querySelector(".password");
 const confirmPassword = document.querySelector(".confirmPassword");
 
-myForm.addEventListener("click", function e() {
-  console.log("test");
-});
-
 password.addEventListener("input", function () {
   const inputValue = password.value;
   if (inputValue.length >= 5 && inputValue.length < 15) {
@@ -22,4 +18,9 @@ confirmPassword.addEventListener("input", function () {
   } else {
     confirmPassword.classList.add("error");
   }
+});
+
+myForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+  const value = myForm.querySelector('input[type="text"]').value;
 });
